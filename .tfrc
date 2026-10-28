@@ -1,0 +1,9 @@
+provider_installation {
+  network_mirror {
+    url = "https://mirrors.huaweicloud.com/terraform/"
+    include = ["registry.terraform.io/huaweicloud/*"]
+  }
+  direct {
+    exclude = ["registry.terraform.io/huaweicloud/*"]
+  }
+}

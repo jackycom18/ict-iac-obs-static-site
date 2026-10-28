@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ICT IaC 静态网站</title>
+  <style>
+    :root { color-scheme: dark; }
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; font-family: "Microsoft YaHei", sans-serif; background: radial-gradient(circle at top, #123c69, #07111f 60%); color: #eef6ff; }
+    main { width: min(760px, 90vw); padding: 48px; border: 1px solid #2b6a9b; border-radius: 24px; background: rgba(7, 17, 31, .86); box-shadow: 0 24px 80px rgba(0, 0, 0, .42); }
+    .eyebrow { color: #57c7ff; letter-spacing: .22em; font-size: 12px; }
+    h1 { font-size: clamp(34px, 6vw, 62px); margin: 12px 0; }
+    p { color: #a9c4dc; line-height: 1.8; }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 28px; }
+    .grid div { padding: 16px; border-radius: 14px; background: #0d2237; border: 1px solid #1c4f78; }
+    strong { display: block; color: #61d6a3; margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">HUAWEI CLOUD · TERRAFORM · OBS</div>
+    <h1>静态网站已上线</h1>
+    <p>本项目由 Terraform 自动创建单 AZ OBS 桶、上传站点文件并开启静态网站托管。</p>
+    <div class="grid">
+      <div><strong>IaC</strong>声明式资源</div>
+      <div><strong>OBS</strong>对象存储</div>
+      <div><strong>HTTP</strong>访问控制</div>
+    </div>
+  </main>
+</body>
+</html>
